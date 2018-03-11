@@ -13,12 +13,11 @@
 struct Job 
 {
 	int size;
-	int valid;
 	int submitter;
 };
 struct Job new_job;
 
-struct Job quit_job = { -1, 0, -1};
+struct Job quit_job = { -1, -1};
 
 struct Job queue[15];
 
@@ -45,7 +44,6 @@ void addJob(int jobsize, int id)
 	sem_wait(&lock_sem);
 	struct Job job = new_job;
 	job.size = jobsize;
-	job.valid = id;
 	job.submitter = id;
 	queue[end] = job;
 	end++;
@@ -59,12 +57,12 @@ void addJob(int jobsize, int id)
 int printJob(int id)
 {
 	int ret = -1;
-	printf("Thread %i is waiting to read\n");
+	printf("Thread %i is waiting to read\n", num);
 	sem_wait(&read_sem);
 	sem_wait(&lock_sem);
-	printf("queue[start].valid : %i\n");
-	printf("Thread %i processing %i job size %i", id, queue[start].submitter, queue[start].size);
-	if(queue[start].valid != -1)
+	printf("queue[start].submitter : %i\n", queue[start].submitter);
+	printf("Thread %i processing job size %i\n", id, queue[start].size);
+	if(queue[start].submitter != -1)
 	{
 		ret = queue[start].size;
 		start++;
@@ -86,7 +84,7 @@ void consumer_func(int num)
 		int var = printJob(num);
 		printf("Consumer %i just processed a job\n", num);
 		if(var == -1)flag = 0;
-		sleep(2);
+		usleep(var*1000);
 	}
 }
 //https://stackoverflow.com/questions/7797664/what-is-the-most-correct-way-to-generate-random-numbers-in-c-with-pthread
@@ -107,7 +105,7 @@ void producer_func(int num)
 	{
 		addJob(random_range(100, 1000), num);
 		printf("Producer %i added a job\n", num);
-		sleep(random_range(1, 2));
+		usleep(random_range(100, 1000)*1000);
 	}
 }
 
