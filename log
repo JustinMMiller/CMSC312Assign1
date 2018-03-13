@@ -1,0 +1,486 @@
+Consumer 2 is waiting to read
+Consumer 1 is waiting to read
+Consumer 5 is waiting to read
+Consumer 3 is waiting to read
+Consumer 4 is waiting to read
+Consumer 6 is waiting to read
+Consumer 7 is waiting to read
+Consumer 8 is waiting to read
+Consumer 9 is waiting to read
+Consumer 10 is waiting to read
+Producer 1 wants to add a job
+Producer 1 adding a job
+Start index : 0 End index 0
+Consumer 2 processing job size 301 end - start 1
+Job Submitter : 1
+Consumer 2 removed a job
+Start index : 1 End index 1
+Producer 2 wants to add a job
+Producer 2 adding a job
+Start index : 1 End index 1
+Consumer 1 processing job size 393 end - start 1
+Job Submitter : 2
+Consumer 1 removed a job
+Start index : 2 End index 2
+Producer 3 wants to add a job
+Producer 3 adding a job
+Start index : 2 End index 2
+Producer 4 wants to add a job
+Producer 4 adding a job
+Start index : 2 End index 3
+Consumer 5 processing job size 538 end - start 2
+Job Submitter : 3
+Consumer 5 removed a job
+Start index : 3 End index 4
+Producer 6 wants to add a job
+Producer 6 adding a job
+Start index : 3 End index 4
+Producer 5 wants to add a job
+Producer 5 adding a job
+Start index : 3 End index 5
+Consumer 7 processing job size 682 end - start 3
+Job Submitter : 4
+Consumer 7 removed a job
+Start index : 4 End index 6
+Producer 7 wants to add a job
+Producer 7 adding a job
+Start index : 4 End index 6
+Consumer 6 processing job size 919 end - start 3
+Job Submitter : 6
+Consumer 6 removed a job
+Start index : 5 End index 7
+Producer 8 wants to add a job
+Producer 8 adding a job
+Start index : 5 End index 7
+Consumer 3 processing job size 775 end - start 3
+Job Submitter : 5
+Consumer 3 removed a job
+Start index : 6 End index 8
+Consumer 9 processing job size 164 end - start 2
+Job Submitter : 7
+Consumer 9 removed a job
+Start index : 7 End index 8
+Consumer 8 processing job size 257 end - start 1
+Job Submitter : 8
+Consumer 8 removed a job
+Start index : 8 End index 8
+Consumer 10 processing job size 0 end - start 0
+Job Submitter : 0
+Consumer 10 removed a job
+Start index : 8 End index 8
+Producer 9 wants to add a job
+Producer 9 adding a job
+Start index : 8 End index 8
+Consumer 4 processing job size 401 end - start 1
+Job Submitter : 9
+Consumer 4 removed a job
+Start index : 9 End index 9
+Producer 10 wants to add a job
+Producer 10 adding a job
+Start index : 9 End index 9
+Producer 11 wants to add a job
+Producer 11 adding a job
+Start index : 9 End index 10
+Producer 12 wants to add a job
+Producer 12 adding a job
+Start index : 9 End index 11
+Producer 13 wants to add a job
+Producer 13 adding a job
+Start index : 9 End index 12
+Producer 14 wants to add a job
+Producer 14 adding a job
+Start index : 9 End index 13
+Producer 15 wants to add a job
+Producer 15 adding a job
+Start index : 9 End index 14
+Producer 16 wants to add a job
+Producer 16 adding a job
+Start index : 9 End index 15
+Producer 17 wants to add a job
+Producer 17 adding a job
+Start index : 9 End index 16
+Producer 18 wants to add a job
+Producer 18 adding a job
+Start index : 9 End index 17
+Producer 19 wants to add a job
+Producer 19 adding a job
+Start index : 9 End index 18
+Producer 20 wants to add a job
+Producer 3 wants to add a job
+Producer 4 wants to add a job
+Consumer 10 is waiting to read
+Consumer 10 processing job size 546 end - start 10
+Job Submitter : 10
+Consumer 10 removed a job
+Start index : 10 End index 19
+Producer 20 adding a job
+Start index : 10 End index 19
+Consumer 3 is waiting to read
+Producer 11 wants to add a job
+Producer 10 wants to add a job
+Consumer 3 processing job size 690 end - start 10
+Job Submitter : 11
+Consumer 3 removed a job
+Start index : 11 End index 20
+Producer 3 adding a job
+Start index : 11 End index 20
+Producer 17 wants to add a job
+Producer 1 wants to add a job
+Consumer 2 is waiting to read
+Consumer 2 processing job size 783 end - start 10
+Job Submitter : 12
+Consumer 2 removed a job
+Start index : 12 End index 21
+Producer 4 adding a job
+Start index : 12 End index 21
+Producer 2 wants to add a job
+Producer 6 wants to add a job
+Producer 8 wants to add a job
+Producer 5 wants to add a job
+Consumer 4 is waiting to read
+Consumer 4 processing job size 928 end - start 10
+Producer 12 wants to add a job
+Job Submitter : 13
+Consumer 4 removed a job
+Start index : 13 End index 22
+Producer 9 wants to add a job
+Producer 11 adding a job
+Start index : 13 End index 22
+Consumer 3 is waiting to read
+Consumer 3 processing job size 172 end - start 10
+Job Submitter : 14
+Consumer 3 removed a job
+Start index : 14 End index 23
+Producer 15 wants to add a job
+Producer 15 adding a job
+Start index : 14 End index 23
+Producer 16 wants to add a job
+Producer 3 wants to add a job
+Producer 18 wants to add a job
+Producer 19 wants to add a job
+Consumer 7 is waiting to read
+Consumer 7 processing job size 265 end - start 10
+Job Submitter : 15
+Consumer 7 removed a job
+Start index : 15 End index 24
+Consumer 8 is waiting to read
+Consumer 8 processing job size 409 end - start 9
+Job Submitter : 16
+Consumer 8 removed a job
+Start index : 16 End index 24
+Producer 1 adding a job
+Start index : 16 End index 24
+Producer 17 adding a job
+Start index : 16 End index 25
+Consumer 10 is waiting to read
+Consumer 10 processing job size 554 end - start 10
+Job Submitter : 17
+Consumer 10 removed a job
+Start index : 17 End index 26
+Producer 2 adding a job
+Start index : 17 End index 26
+Consumer 1 is waiting to read
+Consumer 1 processing job size 647 end - start 10
+Job Submitter : 18
+Consumer 1 removed a job
+Start index : 18 End index 27
+Consumer 5 is waiting to read
+Consumer 5 processing job size 791 end - start 9
+Job Submitter : 19
+Consumer 5 removed a job
+Start index : 19 End index 27
+Producer 6 adding a job
+Start index : 19 End index 27
+Producer 8 adding a job
+Start index : 19 End index 28
+Producer 4 wants to add a job
+Consumer 7 is waiting to read
+Consumer 7 processing job size 936 end - start 10
+Job Submitter : 20
+Consumer 7 removed a job
+Start index : 20 End index 29
+Producer 5 adding a job
+Start index : 20 End index 29
+Producer 11 wants to add a job
+Consumer 9 is waiting to read
+Consumer 9 processing job size 284 end - start 10
+Job Submitter : 3
+Consumer 9 removed a job
+Start index : 21 End index 30
+Consumer 6 is waiting to read
+Consumer 6 processing job size 381 end - start 9
+Job Submitter : 4
+Consumer 6 removed a job
+Start index : 22 End index 30
+Producer 12 adding a job
+Start index : 22 End index 30
+Producer 17 wants to add a job
+Producer 17 adding a job
+Start index : 22 End index 31
+Consumer 3 is waiting to read
+Consumer 3 processing job size 365 end - start 10
+Job Submitter : 11
+Consumer 3 removed a job
+Start index : 23 End index 32
+Producer 16 adding a job
+Start index : 23 End index 32
+Consumer 2 is waiting to read
+Consumer 2 processing job size 682 end - start 10
+Job Submitter : 15
+Consumer 2 removed a job
+Start index : 24 End index 33
+Consumer 5 is waiting to read
+Consumer 5 processing job size 713 end - start 9
+Job Submitter : 1
+Consumer 5 removed a job
+Start index : 25 End index 33
+Producer 3 adding a job
+Start index : 25 End index 33
+Producer 10 adding a job
+Start index : 25 End index 34
+Producer 6 wants to add a job
+Consumer 7 is waiting to read
+Consumer 7 processing job size 252 end - start 10
+Job Submitter : 17
+Consumer 7 removed a job
+Start index : 26 End index 35
+Producer 18 adding a job
+Start index : 26 End index 35
+Consumer 4 is waiting to read
+Consumer 4 processing job size 810 end - start 10
+Job Submitter : 2
+Consumer 4 removed a job
+Start index : 27 End index 36
+Producer 19 adding a job
+Start index : 27 End index 36
+Producer 5 wants to add a job
+Consumer 3 is waiting to read
+Consumer 3 processing job size 400 end - start 10
+Job Submitter : 6
+Consumer 3 removed a job
+Start index : 28 End index 37
+Producer 4 adding a job
+Start index : 28 End index 37
+Consumer 1 is waiting to read
+Consumer 1 processing job size 698 end - start 10
+Job Submitter : 8
+Consumer 1 removed a job
+Start index : 29 End index 38
+Producer 11 adding a job
+Start index : 29 End index 38
+Producer 12 wants to add a job
+Consumer 6 is waiting to read
+Consumer 6 processing job size 304 end - start 10
+Job Submitter : 5
+Consumer 6 removed a job
+Start index : 30 End index 39
+Producer 9 adding a job
+Start index : 30 End index 39
+Producer 19 wants to add a job
+Consumer 4 is waiting to read
+Consumer 4 processing job size 288 end - start 10
+Job Submitter : 12
+Consumer 4 removed a job
+Start index : 31 End index 40
+Producer 6 adding a job
+Start index : 31 End index 40
+Consumer 3 is waiting to read
+Consumer 3 processing job size 122 end - start 10
+Job Submitter : 17
+Consumer 3 removed a job
+Start index : 32 End index 41
+Producer 5 adding a job
+Start index : 32 End index 41
+Consumer 8 is waiting to read
+Consumer 8 processing job size 778 end - start 10
+Job Submitter : 16
+Consumer 8 removed a job
+Start index : 33 End index 42
+Producer 10 wants to add a job
+Producer 10 adding a job
+Start index : 33 End index 42
+Consumer 10 is waiting to read
+Consumer 10 processing job size 107 end - start 10
+Job Submitter : 3
+Consumer 10 removed a job
+Start index : 34 End index 43
+Producer 19 adding a job
+Start index : 34 End index 43
+Producer 18 wants to add a job
+Producer 5 wants to add a job
+Consumer 2 is waiting to read
+Consumer 2 processing job size 268 end - start 10
+Job Submitter : 10
+Consumer 2 removed a job
+Start index : 35 End index 44
+Producer 12 adding a job
+Start index : 35 End index 44
+Consumer 7 is waiting to read
+Consumer 7 processing job size 124 end - start 10
+Job Submitter : 18
+Consumer 7 removed a job
+Start index : 36 End index 45
+Producer 18 adding a job
+Start index : 36 End index 45
+Producer 6 wants to add a job
+Consumer 9 is waiting to read
+Consumer 9 processing job size 272 end - start 10
+Job Submitter : 19
+Consumer 9 removed a job
+Start index : 37 End index 46
+Consumer 5 is waiting to read
+Consumer 5 processing job size 388 end - start 9
+Job Submitter : 4
+Consumer 5 removed a job
+Start index : 38 End index 46
+Producer 5 adding a job
+Start index : 38 End index 46
+Producer 6 adding a job
+Start index : 38 End index 47
+Producer 19 wants to add a job
+Consumer 3 is waiting to read
+Consumer 3 processing job size 312 end - start 10
+Job Submitter : 11
+Consumer 3 removed a job
+Start index : 39 End index 48
+Producer 19 adding a job
+Start index : 39 End index 48
+Consumer 1 is waiting to read
+Consumer 1 processing job size 794 end - start 10
+Job Submitter : 9
+Consumer 1 removed a job
+Start index : 40 End index 49
+Producer 12 wants to add a job
+Producer 12 adding a job
+Start index : 40 End index 49
+Consumer 10 is waiting to read
+Consumer 10 processing job size 674 end - start 10
+Job Submitter : 6
+Consumer 10 removed a job
+Start index : 41 End index 50
+Producer 18 wants to add a job
+Producer 18 adding a job
+Start index : 41 End index 50
+Consumer 4 is waiting to read
+Consumer 4 processing job size 814 end - start 10
+Job Submitter : 5
+Consumer 4 removed a job
+Start index : 42 End index 51
+Consumer 8 is waiting to read
+Consumer 8 processing job size 437 end - start 9
+Job Submitter : 10
+Consumer 8 removed a job
+Start index : 43 End index 51
+Consumer 6 is waiting to read
+Consumer 6 processing job size 428 end - start 8
+Job Submitter : 19
+Consumer 6 removed a job
+Start index : 44 End index 51
+Producer -1 wants to add a job
+Producer -1 adding a job
+Start index : 44 End index 51
+Consumer 2 is waiting to read
+Consumer 2 processing job size 480 end - start 8
+Job Submitter : 12
+Consumer 2 removed a job
+Start index : 45 End index 52
+Consumer 9 is waiting to read
+Consumer 9 processing job size 342 end - start 7
+Job Submitter : 18
+Consumer 9 removed a job
+Start index : 46 End index 52
+Consumer 3 is waiting to read
+Consumer 3 processing job size 119 end - start 6
+Job Submitter : 5
+Consumer 3 removed a job
+Start index : 47 End index 52
+Consumer 5 is waiting to read
+Consumer 5 processing job size 886 end - start 5
+Job Submitter : 6
+Consumer 5 removed a job
+Start index : 48 End index 52
+Consumer 2 is waiting to read
+Consumer 2 processing job size 104 end - start 4
+Job Submitter : 19
+Consumer 2 removed a job
+Start index : 49 End index 52
+Consumer 7 is waiting to read
+Consumer 7 processing job size 390 end - start 3
+Job Submitter : 12
+Consumer 7 removed a job
+Start index : 50 End index 52
+Consumer 8 is waiting to read
+Consumer 8 processing job size 778 end - start 2
+Job Submitter : 18
+Consumer 8 removed a job
+Start index : 51 End index 52
+Consumer 7 is waiting to read
+Consumer 7 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 7 removed a job
+Start index : 51 End index 52
+Consumer 7 is DYING
+
+Consumer 1 is waiting to read
+Consumer 1 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 1 removed a job
+Start index : 51 End index 52
+Consumer 1 is DYING
+
+Consumer 9 is waiting to read
+Consumer 9 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 9 removed a job
+Start index : 51 End index 52
+Consumer 9 is DYING
+
+Consumer 10 is waiting to read
+Consumer 10 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 10 removed a job
+Start index : 51 End index 52
+Consumer 10 is DYING
+
+Consumer 5 is waiting to read
+Consumer 5 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 5 removed a job
+Start index : 51 End index 52
+Consumer 5 is DYING
+
+Consumer 6 is waiting to read
+Consumer 6 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 6 removed a job
+Start index : 51 End index 52
+Consumer 6 is DYING
+
+Consumer 4 is waiting to read
+Consumer 4 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 4 removed a job
+Start index : 51 End index 52
+Consumer 4 is DYING
+
+Consumer 3 is waiting to read
+Consumer 3 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 3 removed a job
+Start index : 51 End index 52
+Consumer 3 is DYING
+
+Consumer 2 is waiting to read
+Consumer 2 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 2 removed a job
+Start index : 51 End index 52
+Consumer 2 is DYING
+
+Consumer 8 is waiting to read
+Consumer 8 processing job size -1 end - start 1
+Job Submitter : -1
+Consumer 8 removed a job
+Start index : 51 End index 52
+Consumer 8 is DYING
+
