@@ -12,6 +12,8 @@
 #include<pthread.h>
 #include<limits.h>
 
+//SJF VERSION
+
 typedef struct Jobs 
 {
 	int size;
@@ -137,15 +139,17 @@ V consumer_func(int num)
 	Job process;
 	while(flag == 1 && !stop)
 	{
-		if(stop)return;
 		process = printJob(num);
-		if(process.size == 2000)flag = 0;
-		else{sleep(((process.size % 100)/10)+1);}
-		if(flag)
+		if(process.size == 2000)
 		{
+			flag = 0;
+		}
+		else{
 			ret.waittime += (int)difftime(time(NULL),process.submitted);
 			ret.proccount++;
+			sleep(((process.size % 100)/10)+1);
 		}
+		if(stop)return;
 	}
 	sem_post(&read_sem);
 	printf("Consumer %i is DYING\n\n", num);

@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<sys/types.h>
+#include<time.h>
 #include<sys/stat.h>
 #include<sys/wait.h>
 #include<fcntl.h>
@@ -10,17 +11,23 @@
 #include<semaphore.h>
 #include<pthread.h>
 
-struct Job 
+
+// FCFS VERSION
+
+typedef struct Jobs
 {
 	int size;
 	int submitter;
 	time_t submitted;
-};
-struct Job new_job;
+} Job;
+typedef struct Vec
+{
+	int proccount;
+	int waittime;
+}V;
 
-struct Job quit_job = { -1, -1};
 
-struct Job queue[15];
+Job queue[15];
 
 sem_t lock_sem;
 sem_t read_sem;
@@ -45,32 +52,31 @@ void signal_handler(int signal)
 void addJob(int jobsize, int id)
 {	
 	printf("Producer %i wants to add a job\n", id);
+	Job job;
 	sem_wait(&write_sem);
 	sem_wait(&lock_sem);
 	if(!stop)
 	{
-		struct Job job = new_job;
 		job.size = jobsize;
 		job.submitter = id;
+		job.submitted = time(NULL);
 		queue[(start+qsize)%15] = job;
 		qsize++;
-		printf("Producer %i adding a job\nStart index : %i End index %i\n", id, start, start+qsize);
 	}
 	sem_post(&read_sem);
 	sem_post(&lock_sem);
 }
 
-int printJob(int id)
+Job printJob(int id)
 {
-	int ret = -1;
+	Job ret;
 	printf("Consumer %i is waiting to read\n", id);
 	sem_wait(&read_sem);
 	sem_wait(&lock_sem);
 	printf("Consumer %i processing job size %i qsize %i\n", id, queue[start%15].size, qsize);
 	printf("Job Submitter : %i\n", queue[start%15].submitter);
-	if(queue[start%15].size > 0)
-	{
-		ret = queue[start%15].size;
+	ret = queue[start%15];
+	if(ret.submitter != -1){
 		start++;
 		qsize--;
 	}
@@ -80,19 +86,28 @@ int printJob(int id)
 	return ret;
 }
 
-void consumer_func(int num)
+V consumer_func(int num)
 {
+	V ret;
+	ret.proccount = 0;
+	ret.waittime = 0;
 	int flag = 1;
+	Job process;
 	while(flag == 1 && !stop)
 	{
+		process = printJob(num);
+		if(process.size == -1)flag = 0;
+		else{
+			ret.waittime += (int)difftime(time(NULL), process.submitted);
+			ret.proccount++;
+			sleep(((process.size % 100)/10)+1);
+		}
 		if(stop)return;
-		int var = printJob(num);
-		if(var == -1)flag = 0;
-		else{sleep((var % 5)+1);}
 	}
 	sem_post(&read_sem);
 	sem_post(&write_sem);
 	printf("Consumer %i is DYING\n\n", num);
+	return ret;
 }
 //https://stackoverflow.com/questions/7797664/what-is-the-most-correct-way-to-generate-random-numbers-in-c-with-pthread
 //STACK OVERFLOW
@@ -141,9 +156,16 @@ int main(int argc, char ** argv)
 		pthread_join(producers[i], NULL);
 	}
 	addJob(-1, -1);
+	int totalwait = 0;
+	int totaljobs = 0;
+	V vector;
 	for(i = 0; i < k; i++)
 	{
-		pthread_join(consumers[i], NULL);
+		pthread_join(consumers[i], &vector);
+		totalwait += vector.waittime;
+		totaljobs += vector.proccount;
 	}
+	printf("total wait %i total jobs %i\n", totalwait, totaljobs);
+	printf("Average wait : %d\n", totalwait/totaljobs);
 	return 0;
 }
